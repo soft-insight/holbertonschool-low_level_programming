@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <unistd.h>
 /**
@@ -7,7 +9,6 @@
  */
 int main(void)
 {
-	dprintf(STDERR_FILEEDNO,\
-		"and that piece of art isuseful\" - Dora Korpar, 2015-10-19\n");
+	fprintf(stderr,"and that piece of art isuseful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
