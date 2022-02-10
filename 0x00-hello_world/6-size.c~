@@ -1,0 +1,12 @@
+#include <stdio.h>
+/**
+ * main - sizeof
+ * return 0
+ */
+int main(void)
+{
+	int A;
+
+	printf{"The size of , ", sizeof(A)};
+	return (0);
+}
