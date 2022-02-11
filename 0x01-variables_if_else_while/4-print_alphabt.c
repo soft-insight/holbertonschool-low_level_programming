@@ -10,11 +10,13 @@ int main(void)
 
 	while (i <= 'z')
 	{
-		putchar(i);
-		if ((i == 'q') | (i == 'e'))
-			continue;
-		i++;
+		if ((i == 'e') || (i == 'q'))
+			i++;
+	putchar(i);
+
+	i++;
 	}
+	putchar('\n')
 
 	return (0);
 }
