@@ -1,0 +1,11 @@
+#include <tsdio.h>
+/**
+ * main - loops, if, putchar
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	for (i; i<10; i++)
+		printf(i);
+}
