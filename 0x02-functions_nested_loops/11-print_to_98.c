@@ -1,9 +1,9 @@
-#include "stdlib.h"
+#include "stdio.h"
 #include "main.h"
 
 /**
  * print_to_98 - print from n to 98
- * @n: the number where to begin
+ * @n: the number to start
  * Return: void
  */
 
@@ -12,9 +12,27 @@ void print_to_98(int n)
 
 	int j;
 
-	for (j = 0; j <= 98; j++)
+	if (n < 98)
 	{
-		printf("%d ,", j);
+		for (j = n; j <= 98; j++)
+		{
+			if (j == 98)
+				printf("%d", j);
+			else
+				printf("%d, ", j);
 
+		}
+		putchar('\n');
+	}
+	else
+	{
+		for (j = n; j >= 98; j--)
+		{
+			if (j == 98)
+				printf("%d", j);
+			else
+				printf("%d, ", j);
+		}
+		putchar('\n');
 	}
 }
