@@ -11,8 +11,6 @@ int main(void)
 	int j;
 	int k;
 	int n = 1024;
-	int sj[n];
-	int sk[n];
 	int sumaj = 0;
 	int sumak = 0;
 
@@ -22,13 +20,11 @@ int main(void)
 		k = 5 * i;
 		if (j < n)
 		{
-			sj[i] = j;
-			sumaj = sumaj + sj[i];
+			sumaj = sumaj + j;
 		}
 		if (k < n)
 		{
-			sk[i] = k;
-			sumak = sumak + sk[i];
+			sumak = sumak + k;
 		}
 	}
 	printf("%d\n", sumaj + sumak);
