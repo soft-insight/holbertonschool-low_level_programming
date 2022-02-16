@@ -18,7 +18,7 @@ int main(void)
 		j = 3 * i;
 		k = 5 * i;
 		l = 15 * i;
-		if (j < n )
+		if (j < n)
 			sumaj = sumaj + j;
 		if (k < n)
 			sumak = sumak + k;
