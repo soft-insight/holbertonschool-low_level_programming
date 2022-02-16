@@ -7,27 +7,25 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int i, j, k, l;
 	int n = 1024;
 	int sumaj = 0;
 	int sumak = 0;
+	int sumal = 0;
 
-	for (i = 1; i <= n; i++)
+	for (i = 1; i < n; i++)
 	{
 		j = 3 * i;
 		k = 5 * i;
-		if (j < n)
-		{
+		l = 15 * i;
+		if (j < n )
 			sumaj = sumaj + j;
-		}
 		if (k < n)
-		{
 			sumak = sumak + k;
-		}
+		if (l < n)
+			sumal = sumal + l;
 	}
-	printf("%d\n", sumaj + sumak);
+	printf("%d\n", sumaj + sumak - sumal);
 
 	return (0);
 }
