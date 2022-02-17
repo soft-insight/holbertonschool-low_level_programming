@@ -1,0 +1,24 @@
+#include <tdio.h>
+
+/**
+ * main -
+ *
+ *
+ */
+
+int main(void)
+{
+	int i, j;
+	int n[32];
+
+	n[1] = 1;
+	n[2] = 2;
+
+	for (i = 3; i < 33; i++)
+		n[i] = n[i - 1] + n[i - 2];
+
+	for (i = 0; i < 33; i++)
+		printf("%d, ", n[i]);
+
+	return (0);
+}
