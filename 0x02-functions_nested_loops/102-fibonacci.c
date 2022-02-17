@@ -22,10 +22,9 @@ int main(void)
 	for (i = 1; i < 51; i++)
 	{
 		if (i < 50)
-		printf("%ld ,", n[i]);
+		printf("%ld, ", n[i]);
 		else
 			printf("%ld\n", n[i]);
 	}
 	return (0);
-
 }
