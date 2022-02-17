@@ -10,19 +10,15 @@
 int main(void)
 {
 	int i;
-	char name1[] = "Fizz";
-	char name2[] = "Buzz";
-	char name3[] = "FizzBuzz";
-
 
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-			printf("%s ", name3);
+			printf("%s ", "FizzBuzz");
 		else if (i % 5 == 0)
-			printf("%s ", name2);
+			printf("%s ", "Buzz");
 		else if (i % 3 == 0)
-			printf("%s ", name1);
+			printf("%s ", "Fizz");
 		else
 			printf("%d ", i);
 	}
