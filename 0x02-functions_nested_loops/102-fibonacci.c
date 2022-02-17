@@ -1,22 +1,32 @@
 #include <stdio.h>
-int main (void)
+
+/**
+ * main - prints 50 fibancci
+ *
+ * Return: 0 exit
+ */
+
+int main(void)
 {
 	int i;
-	int n[ 50 ];
+	long int n[50];
 
 	n[1] = 1;
 	n[2] = 2;
 
-	for ( i = 3; i < 51; i++ )
+	for (i = 3; i < 51; i++)
 	{
-		n[ i ] = n[i-1] + n[i-2];
+		n[i] = n[i - 1] + n[i - 2];
 	}
 
-	for (i = 1; i < 51; i++ )
+	for (i = 1; i < 51; i++)
 	{
-		printf("%d ,", n[i] );
+		if (i < 50)
+		printf("%ld ,", n[i]);
+		else
+			printf("%ld\n", n[i]);
 	}
 	printf("\n");
-	    return 0;
+	return (0);
 
 }
