@@ -4,8 +4,7 @@
  * mul - mult two ints
  * @a: input 1
  * @b: input 2
- * @c: output
- * Return: c as mult of a and b
+ * Return: @c as mult of a and b
  */
 
 
