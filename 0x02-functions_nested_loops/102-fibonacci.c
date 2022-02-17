@@ -14,8 +14,9 @@ int main (void)
 
 	for (i = 1; i < 51; i++ )
 	{
-		printf("%d, \n", n[i] );
+		printf("%d ,", n[i] );
 	}
+	printf("\n");
 	    return 0;
 
 }
