@@ -26,7 +26,6 @@ int main(void)
 		else
 			printf("%ld\n", n[i]);
 	}
-	printf("\n");
 	return (0);
 
 }
