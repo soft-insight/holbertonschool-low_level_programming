@@ -14,14 +14,15 @@ int main(void)
 	char name2[] = "Buzz";
 	char name3[] = "FizzBuzz";
 
+
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
-			printf("%s ", name1);
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("%s ", name3);
 		else if (i % 5 == 0)
 			printf("%s ", name2);
-		else if (i % 15 == 0)
-			printf("%s ", name3);
+		else if (i % 3 == 0)
+			printf("%s ", name1);
 		else
 			printf("%d ", i);
 	}
