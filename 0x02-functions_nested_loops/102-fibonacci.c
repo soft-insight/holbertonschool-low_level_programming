@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main (void)
 {
-	int i, j;
+	int i;
 	int n[ 50 ];
 
 	n[1] = 1;
