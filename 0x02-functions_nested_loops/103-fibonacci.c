@@ -8,22 +8,27 @@
 
 int main(void)
 {
-	int i, j;
-	int n[32];
+	int i;
+	int k = 32;
+	int n[k];
 	int sum = 0;
 
 	n[1] = 1;
 	n[2] = 2;
 
-	for (i = 3; i < 33; i++)
+	for (i = 3; i <= k; i++)
 		n[i] = n[i - 1] + n[i - 2];
+/*
+ * for (i = 1; i <= k; i++)
+ * printf ("[%d] = %d\n", i, n[i]);
+*/
 
-	for (i = 1; i < 33; i++)
+	for (i = 1; i <= k; i++)
 	{
-		j = 2 * i;
-		if (j < 33)
+		if (n[i] % 2 == 0)
 		{
-			sum = sum + n[j];
+			sum = sum + n[i];
+			/* printf("[%d] = %d, %d\n", i, n[i], sum);*/
 		}
 	}
 	printf("%d\n", sum);
