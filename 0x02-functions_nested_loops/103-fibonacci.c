@@ -9,21 +9,20 @@
 int main(void)
 {
 	int i;
-	int k = 32;
-	int n[k];
+	int n[32];
 	int sum = 0;
 
 	n[1] = 1;
 	n[2] = 2;
 
-	for (i = 3; i <= k; i++)
+	for (i = 3; i <= 32; i++)
 		n[i] = n[i - 1] + n[i - 2];
 /*
  * for (i = 1; i <= k; i++)
  * printf ("[%d] = %d\n", i, n[i]);
 */
 
-	for (i = 1; i <= k; i++)
+	for (i = 1; i <= 32; i++)
 	{
 		if (n[i] % 2 == 0)
 		{
