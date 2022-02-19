@@ -13,12 +13,15 @@ int main(void)
 	long int n = 612852475143;
 	long int i, j;
 
-	for (i = 2; i <= n / 2; i++)
+	for (i = 2; i <= n ; i++)
 	{
 		if (n % i == 0)
+		{
 			j = prime(i);
+			printf("%ld\n", j);
+		}
 	}
-	printf("%ld\n", j);
+	printf("final? %ld\n", j);
 
 	return (0);
 }
