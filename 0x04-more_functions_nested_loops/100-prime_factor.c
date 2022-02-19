@@ -7,18 +7,20 @@
  */
 
 long int prime(int p);
-
 int main(void)
 {
 	long int n = 612852475143;
-	long int i, j;
+	long int i, j, k = n;
 
-	for (i = 2; i <= 60000000 ; i++)
+	/* printf("k inicial %ld\n", k);*/
+	for (i = 2; i <= k ; i++)
 	{
+		/* printf("%ld i", i);*/
 		if (n % i == 0)
 		{
 			j = prime(i);
-/*			printf("%ld\n", j);*/
+			k = n / j;
+			/*printf("inside j = %ld, k=%ld\n", j, k);*/
 		}
 	}
 	printf("%ld\n", j);
