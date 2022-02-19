@@ -6,11 +6,11 @@
  * Return: 0
  */
 
-long int prime(int p);
+/* long int prime(int p); */
 int main(void)
 {
 	long int n = 612852475143;
-	long int i, j, k = n;
+	long int i, k = n;
 
 	/* printf("k inicial %ld\n", k);*/
 	for (i = 2; i <= k ; i++)
@@ -18,12 +18,12 @@ int main(void)
 		/* printf("%ld i", i);*/
 		if (n % i == 0)
 		{
-			j = prime(i);
-			k = n / j;
-			/*printf("inside j = %ld, k=%ld\n", j, k);*/
+			/* j = prime(i); */
+			k = n / i;
+			/*printf("inside i = %ld, k=%ld\n", i, k);*/
 		}
 	}
-	printf("%ld\n", j);
+	printf("%ld\n", i);
 
 	return (0);
 }
@@ -33,27 +33,28 @@ int main(void)
  * @p: input the number
  * Return: k the prime number
  */
-
+/*
 long int prime(int p)
 {
 	int i, k, flag = 0;
 
 	for (i = 2; i <= p / 2; ++i)
 	{
-		/*
-		 * if p is divisible by i,
-		 * then p is not prime
-		 * change flag to 1 for non-prime number
-		 */
+
+		  if p is divisible by i,
+		  then p is not prime
+		  change flag to 1 for non-prime number
 		if (p % i == 0)
 		{
 			flag = 1;
 			break;
 		}
 	}
-	/* flag is 0 for prime numbers */
+	  flag is 0 for prime numbers
 	if (flag == 0)
-		k = p; /*printf("%d\n", p);*/
+		k = p; printf("%d\n", p);
+
 
 	return (k);
 }
+*/
