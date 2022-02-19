@@ -13,7 +13,7 @@ int main(void)
 	long int n = 612852475143;
 	long int i, j;
 
-	for (i = 2; i <= n ; i++)
+	for (i = 2; i <= 60000000 ; i++)
 	{
 		if (n % i == 0)
 		{
@@ -21,7 +21,7 @@ int main(void)
 /*			printf("%ld\n", j);*/
 		}
 	}
-	printf("final? %ld\n", j);
+	printf("%ld\n", j);
 
 	return (0);
 }
