@@ -2,25 +2,59 @@
 
 /**
  * main - finds the largest prime
- * This code has a fail but the checker accpets the result.
- * In fact this program only verifies the maximum divisor
- * but not the maximun prime factor.
+ * @p: input the number to eval prime
  * Return: 0
  */
 
+long int prime(int p);
 int main(void)
 {
 	long int n = 612852475143;
-	long int i, k;
+	long int i, j, k = n;
 
-	k = n;
+	/* printf("k inicial %ld\n", k);*/
 	for (i = 2; i < k ; i++)
 	{
+		/* printf("%ld i", i);*/
 		if (n % i == 0)
 		{
-			k = n / i;
+			j = prime(i);
+			k = n / j;
+			/*printf("inside j = %ld, k=%ld\n", j, k);*/
 		}
 	}
-	printf("%ld\n", i);
+	printf("%ld\n", j);
+
 	return (0);
+}
+
+/**
+ * prime - finds if the number is prime
+ * @p: input the number
+ * Return: k the prime number
+ */
+
+long int prime(int p)
+{
+	int i, k, flag = 0;
+
+	for (i = 2; i <= p / 2; ++i)
+	{
+
+		/*
+		 * if p is divisible by i,
+		 * then p is not prime
+		 * change flag to 1 for non-prime number
+		 */
+		if (p % i == 0)
+		{
+			flag = 1;
+			break;
+		}
+	}
+	/*flag is 0 for prime numbers*/
+	if (flag == 0)
+		k = p; /*printf("\n", p);*/
+
+	return (k);
 }
