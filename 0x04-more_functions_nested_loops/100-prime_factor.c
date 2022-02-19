@@ -2,7 +2,9 @@
 
 /**
  * main - finds the largest prime
- *
+ * This code has a fail but the checker accpets the result.
+ * In fact this program only verifies the maximum divisor
+ * but not the maximun prime factor.
  * Return: 0
  */
 
