@@ -23,7 +23,7 @@ int main(void)
 			/*printf("inside j = %ld, k=%ld\n", j, k);*/
 		}
 	}
-	printf("new %ld\n", j);
+	printf("%ld\n", j);
 
 	return (0);
 }
