@@ -18,7 +18,7 @@ int main(void)
 		if (n % i == 0)
 		{
 			j = prime(i);
-			printf("%ld\n", j);
+/*			printf("%ld\n", j);*/
 		}
 	}
 	printf("final? %ld\n", j);
