@@ -9,17 +9,12 @@
 
 char *leet(char *s)
 {
-	int i, j, k;
+	int j, k;
 	char set1[] = {'A', 'E', 'O', 'T', 'L'};
 	char set2[] = {'a', 'e', 'o', 't', 'l'};
 	char rep[] = {'4', '3', '0', '7', '1'};
 
-	i = 0;
-
-	while (s[i] != '\0')
-		i++;
-
-	for (j = 0; j < i; j++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		for (k = 0; k < 5; k++)
 		{
