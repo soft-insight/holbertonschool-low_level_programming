@@ -19,14 +19,9 @@ char *_strcat(char *dest, char *src)
 	for (k = 0; k < i + j; k++)
 	{
 		if (k < i)
-		{
 			dest[k] = dest[k];
-		}
-		else
-		{
+		else if (k - i < j)
 			dest[k] = src[k - i];
-		}
        }
-
 	return(dest);
 }
