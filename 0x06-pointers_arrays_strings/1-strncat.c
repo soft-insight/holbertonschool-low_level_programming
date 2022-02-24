@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strncat - concatenates dest = src + dest till n
+ * @dest: the final recipe
+ * @src: the second part
+ * @n: the number of words to concatenate
+ * Return: dest
+ */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
