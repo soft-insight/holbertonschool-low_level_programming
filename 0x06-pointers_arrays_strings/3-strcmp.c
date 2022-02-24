@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strcmp - compare two strings
+ * @s1: string 1
+ * @s2: string 2 to compare with s1
+ * Return: k
+ */
+
+
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
@@ -11,5 +19,5 @@ int _strcmp(char *s1, char *s2)
 	while (s2[j] != '\0')
 		j++;
 	k = i - j;
-	return(k);
+	return (k);
 }
