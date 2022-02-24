@@ -1,9 +1,16 @@
 #include "main.h"
 
+/**
+ * cap_string - Capitalize the string
+ * @s: the string
+ * Return: @s the new string
+ */
+
 char *cap_string(char *s)
 {
 	int i, j, k;
-	char set[] = {'\t', ' ', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	char set[] = {'\t', ' ', '\n', ',', ';', '.',
+		      '!', '?', '"', '(', ')', '{', '}' };
 
 	i = 0;
 
@@ -13,7 +20,7 @@ char *cap_string(char *s)
 	{
 		for (j = 0; j < i; j++)
 		{
-			if (s[j] == set[k] && (s[j + 1] >= 'a')  && (s[j + 1] < 'z') )
+			if (s[j] == set[k] && (s[j + 1] >= 'a')  && (s[j + 1] < 'z'))
 				s[j + 1] = s[j + 1] - 32;
 		}
 	}
