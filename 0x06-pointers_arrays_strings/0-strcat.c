@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strcat - concatenates dest = src + dest
+ * @dest: final string
+ * @src: second part
+ * Return: dest
+ */
+
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -10,10 +17,10 @@ char *_strcat(char *dest, char *src)
 	j = 0;
 	k = 0;
 
-	while(dest[i] != '\0')
+	while (dest[i] != '\0')
 		i++;
 
-	while(src[j] != '\0')
+	while (src[j] != '\0')
 		j++;
 
 	for (k = 0; k < i + j; k++)
@@ -22,6 +29,6 @@ char *_strcat(char *dest, char *src)
 			dest[k] = dest[k];
 		else if (k - i < j)
 			dest[k] = src[k - i];
-       }
-	return(dest);
+	}
+	return (dest);
 }
