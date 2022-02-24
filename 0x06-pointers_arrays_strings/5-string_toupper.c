@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * string_toupper - converts upper
+ * @s: string to upper
+ * Return: s
+ */
+
+
 char *string_toupper(char *s)
 {
 	int i, j;
