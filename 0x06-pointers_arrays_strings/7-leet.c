@@ -1,8 +1,15 @@
 #include "main.h"
 
+/**
+ * leet - encode string to 1377
+ * @s: the string
+ * Return: the string encoded
+ */
+
+
 char *leet(char *s)
 {
-	int i, j ,k;
+	int i, j, k;
 	char set1[] = {'A', 'E', 'O', 'T', 'L'};
 	char set2[] = {'a', 'e', 'o', 't', 'l'};
 	char rep[] = {'4', '3', '0', '7', '1'};
