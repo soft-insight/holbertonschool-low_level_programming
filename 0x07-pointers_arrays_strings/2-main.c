@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-    char *s = "hello";
+    char *s = "wwwhello.holberton.com";
     char *f;
 
-    f = _strchr(s, 'l');
+    f = _strchr(s, '.');
 
     if (f != NULL)
     {
