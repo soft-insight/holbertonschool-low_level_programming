@@ -2,25 +2,23 @@
 
 /**
  * main - finds the largest prime
- * @p: input the number to eval prime
+ * @p: input p
  * Return: 0
  */
 
 long int prime(int p);
+
 int main(void)
 {
 	long int n = 612852475143;
-	long int i, j, k = n;
+	long int i, j;
 
-	/* printf("k inicial %ld\n", k);*/
-	for (i = 2; i < k ; i++)
+	for (i = 2; i <= n / 2; i++)
 	{
-	/* printf("%ld i", i);*/
 		if (n % i == 0)
 		{
 			j = prime(i);
-			k = n / j;
-			/*printf("inside j = %ld, k=%ld\n", j, k);*/
+			printf("%d\n", j)
 		}
 	}
 	printf("%ld\n", j);
@@ -40,7 +38,6 @@ long int prime(int p)
 
 	for (i = 2; i <= p / 2; ++i)
 	{
-
 		/*
 		 * if p is divisible by i,
 		 * then p is not prime
@@ -52,9 +49,9 @@ long int prime(int p)
 			break;
 		}
 	}
-	/*flag is 0 for prime numbers*/
+	/* flag is 0 for prime numbers */
 	if (flag == 0)
-		k = p; /*printf("\n", p);*/
+		k = p; /*printf("%d\n", p);*/
 
 	return (k);
 }
