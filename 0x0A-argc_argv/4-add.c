@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(*argv[i]) && atoi(argv[i]) <= 0)
+		if (!isdigit(*argv[i]) && atoi(argv[i]) <= 0 && *argv[i] != 48 )
 		/* if (atoi(argv[i]) <= 0 && *argv[i] != 48)*/
 		{
 			printf("Error\n");
