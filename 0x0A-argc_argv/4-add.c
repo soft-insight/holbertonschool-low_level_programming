@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(*argv[i]))
-		/*  if (atoi(argv[i]) == 0 && *argv[i] != 48)*/
+		/*if (!isdigit(*argv[i]))*/
+		if (atoi(argv[i]) <= 0 && *argv[i] != 48)
 		{
 			printf("Error\n");
 			return (1);
