@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the multiplication
+ * main - prints the add of n numbers
  * @argc: int of the number of arg
  * @argv: string of the arguments names
  * Return: 0
