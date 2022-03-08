@@ -13,6 +13,9 @@ char *_strdup(char *str)
 	char *strcp;
 	int i, j;
 
+	if (str == NULL)
+		return (NULL);
+
 	j = 0;
 	while (str[j] != '\0')
 		j++;
