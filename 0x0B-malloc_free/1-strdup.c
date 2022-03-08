@@ -20,10 +20,12 @@ char *_strdup(char *str)
 	while (str[j] != '\0')
 		j++;
 
-	strcp = malloc(j * sizeof(char));
+	strcp = malloc(j * sizeof(char) + 1);
 
 	for (i = 0; i < j; i++)
 		strcp[i] = str[i];
 
+	if (strcp == NULL)
+		return (NULL);
 	return (strcp);
 }
