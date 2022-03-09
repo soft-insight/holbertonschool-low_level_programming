@@ -3,7 +3,8 @@
 
 /**
  * free_grid - free a two dim array
- * @height: it is necesary a dim 
+ * @height: it is necesary a dim
+ * @grid: a pointer to pointer of the array
  *
  * Return: void
  */
