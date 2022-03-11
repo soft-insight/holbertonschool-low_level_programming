@@ -2,6 +2,21 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - check the length of the string.
+ * @s: param of the pointer of the string
+ * Return: 10 the length.
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
+
+/**
  * string_nconcat - concatenates two string till n chars of
  * if n > than s2, returns s2
  * @s1: first string
@@ -16,17 +31,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j, k, l;
 	char *s;
 
-	i = 0;
-	j = 0;
-
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[i])
-		i++;
-	while (s2[j])
-		j++;
+
+	i = _strlen(s1);
+	j = _strlen(s2);
 	if (n < j)
 	{
 		s = malloc((i + n) * sizeof(char) + 1);
@@ -43,13 +54,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-
-		s = malloc(j * sizeof(char) + 1);
+		s = malloc((i + j) * sizeof(char) + 1);
 		if (s == NULL)
 			return (NULL);
-		for (l = 0; l < j; l++)
-			s[l] = s2[l];
-		s[j] = '\0';
+		for (l = 0; l < i + j; l++)
+		{
+			if (l < i)
+				s[l] = s1[l];
+			else
+				s[l] = s2[l - i];
+		}
+		s[i + j] = '\0';
 	}
 	return (s);
 }
