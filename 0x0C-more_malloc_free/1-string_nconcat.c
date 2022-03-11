@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			else
 				s[k] = s2[k - i];
 		}
-		s[k] = '\0';
+		s[i + n] = '\0';
 	}
 	else
 	{
@@ -48,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 		for (l = 0; l < j; l++)
 			s[l] = s2[l];
-		s[l] = '\0';
+		s[j] = '\0';
 	}
 	return (s);
 }
