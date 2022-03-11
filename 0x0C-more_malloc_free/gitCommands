@@ -1,0 +1,5 @@
+#/bin/bash
+git add .
+git commit --message="malloc-free"
+git push
+
