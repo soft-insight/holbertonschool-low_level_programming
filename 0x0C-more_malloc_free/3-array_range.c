@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
+ * array_range - mem alloc for integers
+ * @min: the minimum
+ * @max: the max
  *
- *
- *
- *
+ * Return: the array of ints
  */
 
 int *array_range(int min, int max)
@@ -15,7 +16,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	
+
 	n = malloc((max - min + 1) * sizeof(int));
 	if (n == NULL)
 		return (NULL);
