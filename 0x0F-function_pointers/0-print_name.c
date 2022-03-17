@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
 
 /**
  * print_name - passes the char name to the pointer to function f
@@ -18,7 +17,7 @@ void print_name(char *name, void (*f)(char *))
 		i++;
 
 	for (k = 0; k < i; k++)
-		putchar(name[i]);
+		_putchar(name[i]);
 	f(name);
 }
 
