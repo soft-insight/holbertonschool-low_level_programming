@@ -4,7 +4,7 @@
 
 /**
  * sum_them_all - sum variadic integers.
- * @n: the number of items 
+ * @n: the number of items
  * Return: sum
  */
 
