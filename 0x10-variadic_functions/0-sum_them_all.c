@@ -3,10 +3,11 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - check the code for Holberton School students.
- * @n: Is the number of total addends
- * Return: Always 0.
+ * sum_them_all - sum variadic integers.
+ * @n: the number of items 
+ * Return: sum
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list arguments;
