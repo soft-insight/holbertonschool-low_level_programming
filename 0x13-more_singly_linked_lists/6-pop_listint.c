@@ -3,9 +3,10 @@
 #include "lists.h"
 
 /**
+ * pop_listint - pop the first element
+ * @head: pointer to head
  *
- *
- *
+ * Return: the element poped up
  */
 
 int pop_listint(listint_t **head)
