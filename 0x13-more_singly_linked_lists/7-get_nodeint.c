@@ -3,9 +3,11 @@
 #include "lists.h"
 
 /**
+ * get_nodeint_at_index - get node
+ * @head: the head of linked list
+ * @index: the index to get
  *
- *
- *
+ * Return: the node at the index
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -20,7 +22,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		i++;
 	}
 	if (index > i)
-		return NULL;
+		return (NULL);
 
 	return (head);
 }
