@@ -5,7 +5,7 @@
 /**
  * sum_listint - sum a list of ints
  * @head: the head of the list
- * 
+ *
  * Return: the sum
  */
 
