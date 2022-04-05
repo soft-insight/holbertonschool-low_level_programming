@@ -4,7 +4,7 @@
  * get_bit - Get the bit at given index.
  * @n:The decimal number
  * @index:The index in the binary representation
- * 
+ *
  * Return: The bit in the position.
  */
 
