@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - Convert from binary to unsigned int.
  * @b: Is the binary string
-
+ *
  * Return: The decimal number.
  */
 
