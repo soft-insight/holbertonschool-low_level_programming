@@ -25,5 +25,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	num_lett = read(fd, buf, letters);
 
 	write(STDOUT_FILENO, buf, num_lett);
+	close(fd);
 	return (num_lett);
 }
