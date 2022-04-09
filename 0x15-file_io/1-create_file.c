@@ -11,21 +11,26 @@
 int create_file(const char *filename, char *text_content)
 {
 	int i = 0;
-	int fd;
+	int fd, wr;
+
+	if (filename == NULL)
+		return (-1);
 
 	while(text_content[i] != '\0')
 		i++;
 
-	if (!filename)
-		return (-1);
+	/* if (!filename) */
+	/* 	return (-1); */
 
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
 
 	if (text_content)
-		write(fd, text_content, i);
+		wr = write(fd, text_content, i);
 	
+	if (wr == -1)
+		return (-1);
 	close(fd);
 	return (1);
 }
