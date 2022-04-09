@@ -5,7 +5,7 @@
  * @filename: name of the file to read
  * @text_content: number characters in the text
  *
- * Return: the num of chars 
+ * Return: the num of chars
  */
 
 int append_text_to_file(const char *filename, char *text_content)
