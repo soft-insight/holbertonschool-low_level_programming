@@ -2,9 +2,9 @@
 
 /**
  * print_dlistint - print double linked lists elements
- * @dlistint_t: the structure
+ * @h: the head
  *
- * Return - the number of items
+ * Return: the number of items
  */
 
 size_t print_dlistint(const dlistint_t *h)
