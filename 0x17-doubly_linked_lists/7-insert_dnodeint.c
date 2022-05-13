@@ -12,10 +12,14 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new_mem, *temp = *h;
-	unsigned int i = 0;
-	size_t j = 0;
+	unsigned int i = 0, j = 0;
 
-	j = dlistint_len(*h);
+	while (*h != NULL)
+	{
+		(*h) = (*h)->next;
+		j++;
+	}
+	
 	if (idx > j + 1)
 		return (NULL);
 	if (idx == 0)
