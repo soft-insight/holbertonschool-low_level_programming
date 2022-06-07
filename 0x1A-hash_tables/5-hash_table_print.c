@@ -5,30 +5,31 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned int ind;
-	hash_node_t *new_ele;
-	int flag = 0;
+	hash_node_t *node = NULL;
+	unsigned long int i = 0;
+	short pr_commas = 0;
 
-	if (!ht)
+	if (ht == NULL)
 		return;
+
 	printf("{");
 
-	for (ind = 0; ind < ht->size; ind++)
+	for (; i < ht->size; ++i)
 	{
-		if (ht->array[ind] != NULL)
+		node = ht->array[i];
+
+		while (node)
 		{
-			if (flag == 1)
+			if (pr_commas == 1)
 				printf(", ");
-			new_ele = ht->array[ind];
-			while (new_ele != NULL)
-			{
-				printf("'%s': '%s'", new_ele->key, new_ele->value);
-				new_ele = new_ele->next;
-				if (new_ele == NULL)
-					printf(", ");
-			}
-			flag = 1;
+
+			pr_commas = 1;
+			printf("'%s': '%s'", (char *) node->key,
+								(char *) node->value);
+
+			node = node->next;
 		}
 	}
+
 	printf("}\n");
 }
